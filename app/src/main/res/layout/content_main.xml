@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kelompok13.pengenalanpola.com.regresilinear.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/tv_hasil_y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Y : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tv_b2"
+        app:layout_constraintStart_toStartOf="@+id/tv_b2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_b2" />
+
+    <EditText
+        android:id="@+id/et_x2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="x2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_x1" />
+
+    <EditText
+        android:id="@+id/et_x1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="x1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Hitung"
+        app:layout_constraintEnd_toEndOf="@+id/et_x2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_x2"
+        app:layout_constraintTop_toBottomOf="@+id/et_x2" />
+
+    <TextView
+        android:id="@+id/tv_b0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="b0 : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hitung"
+        app:layout_constraintStart_toStartOf="@+id/btn_hitung"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hitung" />
+
+    <TextView
+        android:id="@+id/tv_b1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="b1 : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tv_b0"
+        app:layout_constraintStart_toStartOf="@+id/tv_b0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_b0" />
+
+    <TextView
+        android:id="@+id/tv_b2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="b2 : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tv_b1"
+        app:layout_constraintStart_toStartOf="@+id/tv_b1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_b1" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hasil_y"
+        app:layout_constraintStart_toStartOf="@+id/tv_hasil_y"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hasil_y" />
+
+</android.support.constraint.ConstraintLayout>
